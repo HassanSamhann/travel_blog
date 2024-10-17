@@ -1,0 +1,304 @@
+/* You can add global styles to this file, and also import other style files */
+ 
+
+
+
+.header-bg{
+    background-color:#14687fb4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+header{
+    height: 200px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: .4s;
+}
+nav{
+    padding: 60px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img{
+    width: 10%;
+}
+@media(max-width:768px){
+    .img{
+        width: 20%;
+    }
+
+}
+
+.img img{
+    width: 100%;
+    display: block;
+}
+nav ul {
+    display: flex;  
+    width: 70%;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--nav-color);
+    font-size: 29px;
+    text-shadow: 1px 1px var(--orange-color);
+    transition: .3s;
+}
+@media(max-width :1120px){
+    nav ul{
+        width: 70%;
+        margin-right: 60px;
+    }
+    header nav .sgin{
+        justify-content: end;
+        width: 30%;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    nav .sgin .sin{
+        font-size: 15px;
+    }
+    nav .sgin .log{
+        padding:10px 20px; 
+    }
+}
+@media(max-width :906px){
+    header nav .sgin{
+        display: none;
+    
+        }
+    nav ul {
+    display: none;
+        }
+
+}
+nav ul li a:hover{
+    color: var(--orange-color);
+    
+}
+.main-d{
+    height: 100vh;
+    background-image: url(../../../public/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+nav .sgin{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+nav .sgin .sin {
+    text-decoration: none;
+    color: var(--orange-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    transition: .1s;
+}
+nav .sgin .sin:hover{
+    text-shadow: 2px 2px 2px black;
+}
+nav .sgin .log{
+    text-decoration: none;
+    color: var(--blue-color);
+    background-color: var(--nav-color);
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: 1px solid var(--blue-color);
+    font-weight: bold;
+    font-size: 20px;
+    transition: .3s;
+    
+}
+nav .sgin .log:hover{
+    background-color: var(--blue-color);
+    color: var(--nav-color);
+    border: 1px solid var(--nav-color);
+
+
+
+}
+.main-d{
+    padding-top: 200px;
+    text-align: center;
+    position: relative;
+}
+.main-d .main-text{
+    color: var(--nav-color);
+    text-shadow: 3px 2px 5px var(--blue-color);
+    font-size: 37px;
+    font-weight: bold;
+    
+}
+.main-d .main-ipu{
+    width: 70%;
+    margin: 60px auto;
+    position: relative;
+}
+@media(max-width : 426px){
+    .main-d .main-ipu{
+        width: 100%;
+
+    }
+    .img{
+        width: 30%;
+    }
+
+}
+.main-d .main-ipu input:hover{
+    box-shadow: 0 0 3px 0px var(--blue-color)
+}
+.main-d .main-ipu input{
+    width: 100%;
+    height: 77px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid var(--blue-color);
+    padding: 0px 40px;
+    font-size: 25px;
+    color: var(--blue-color);
+    cursor: pointer;
+    transition: .3s;
+}
+.main-d .main-ipu input::placeholder{
+    color: var(--blue-color) ; 
+    opacity: .8;
+    font-size: 25px;
+    
+}
+@media(max-width:767px){
+    .main-d .main-ipu input::placeholder{
+        font-size:15px;
+    }
+    .search{
+        font-size:15px;
+        right: 10px;
+    }
+    .main-d .main-text{
+        font-size: 25px;
+    }
+}
+.main-d .main-ipu:hover input::placeholder{
+    color: var(--orange-color);
+    transition: .3s;
+}
+.search{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: var(--orange-color);
+    cursor: pointer;
+}
+.main-d .main-bot {
+    width: 100%;
+}
+.main-d .main-bot img {
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+/************** nav colab *************/
+ .main-d .nav-cola{
+    position: fixed;
+    width: 0%;
+    right: 0;
+    top: 0;
+    height:100vh;
+    z-index: 2000;
+    background-color: var(--blue-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: width .3s;
+
+}
+.cola{
+padding: 40px;
+
+}
+.cola li {
+    list-style: none;
+    margin-top: 30px;
+}
+.cola  li a {
+    text-decoration: none;
+    text-decoration: none;
+    color: var(--nav-color);
+    font-size: 29px;
+    text-shadow: 1px 1px var(--orange-color);
+    transition: .3s;
+}
+.cola  li a:hover{
+    color: var(--orange-color);
+    
+}
+ .sgins{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+ .sgins .sins {
+    text-decoration: none;
+    color: var(--orange-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    transition: .1s;
+}
+ .sgins .sins:hover{
+    text-shadow: 2px 2px 2px black;
+}
+ .sgins .logs{
+    text-decoration: none;
+    color: var(--blue-color);
+    background-color: var(--nav-color);
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: 1px solid var(--blue-color);
+    font-weight: bold;
+    font-size: 20px;
+    transition: .3s;
+    
+}
+.sgins .logs:hover{
+    background-color: var(--blue-color);
+    color: var(--nav-color);
+    border: 1px solid var(--nav-color);
+}
+.exit{
+    color: var(--nav-color);
+    font-size: 29px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: none;
+    transition: .3s;
+}
+.bars{
+    color: var(--orange-color);
+    font-size: 35px;
+    cursor: pointer;
+    
+    display: none;
+}
+@media(max-width :906px){
+    .bars{
+        display: block;
+    }
+}
