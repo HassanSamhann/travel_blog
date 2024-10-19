@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainColor{
+  color:#14677f;
+}
+:root{
+  --mainColor:#14677f;
+  --secColor:#ffa500;
+  --thirdColor:#596365;
+}
+.Urbanist-font{
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  color: #596365;
+  text-shadow: 1px 1px 0 #dee1e2 ;
+}
+.metal-mania-regular {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-size: 48px;
+  font-style: normal;
+  line-height: 59.44px;
+  color:#14677f;
+}
+h1 > span{
+  color:#ffa500;
+}
+section{
+  padding: 30px;
+}
+.mainBtn{
+  background-color: white;
+  color:#14677f;
+  font-size:20px ;
+  font-weight: 500;
+  padding: 15px 25px;
+  border-radius: 18px;
+  border: 1px solid #14677f;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+.mainBtn:hover{
+  background-color:#ffa500;
+  border: .5px solid #14677f;
+  box-shadow: 2px 2px  #14677f;
+}
+.planeStyle{
+  color: #14677f;
+  text-shadow: 2px 2px  #ffa500;
+  transition: color .5s;
+}
+.planeStyle:hover{
+  color: #ffa500;
+  text-shadow: 2px 2px  #14677f;
+}
+p{
+  line-height: .7cm;
+}
+.pMore{
+  color:#14677f;
+  text-shadow: 1px 1px  #a9a9a9 ;
+  font-weight: 200;
+}
+.carousel-inner{
+  width: 80% !important;
+  margin: auto;
+}
+.pImgs{
+  position: relative;
+  left:-50px;
+  bottom: 0px;
+}
+.bgLightDanger{
+  background-color: #fce4e4;
+  border-radius: 50px;
+  width: fit-content;
+  padding: 10px;
+}
+
+
+/* media for tabes */
+@media (max-width:992px) {
+  .h1Title{
+    font-size: 36px;
+  }
+  .Urbanist-font{
+    font-size: 13px;
+  }  
+  .mainBtn{
+    width: 120px;
+    font-size:15px ;
+    padding: 8px 15px;
+    border-radius: 10px;
+  }
+  .bgLightDanger{
+    font-size: 12px;
+  }
+  .pImgs{
+    left:0px;
+  }
+}
+
+/* media for phones */
+@media (max-width:786px) {
+
+}
+
