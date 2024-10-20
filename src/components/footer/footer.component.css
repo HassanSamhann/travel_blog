@@ -1,0 +1,83 @@
+:root{
+    --nav-color : #C4F2FF; 
+    --orange-color :#FFA500 ; 
+    --blue-color : #14677F ;    
+}
+
+
+footer{
+    margin-top: 60px;
+    background-color: #97E8FF;
+    min-height: 430px;
+}
+footer .img {
+    width: 100%;
+    rotate: 180deg;
+    height: 100px;
+}
+footer .logo{
+    width: 80%;
+
+}
+footer .logo .l{
+    width: 70%;
+}
+
+footer .logo .s{
+    margin-top: 20px;
+    width: 100%;
+}
+footer .text {
+text-align: start;
+height: 100%;
+}
+footer .text h4{
+    color: var(--blue-color);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: start;
+    cursor: pointer;
+}
+
+footer .text ul{
+    padding: 0;
+}
+footer .text ul li {
+    list-style: none;
+    padding: 5px 0;
+
+}
+footer .text ul li a {
+    color: var(--blue-color);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: start;
+}
+footer .text .live{
+    text-decoration: none;
+    color: var(--orange-color);
+    background-color: var(--blue-color);
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: 1px solid var(--orange-color);
+    font-weight: bold;
+    font-size: 20px;
+    transition: .3s;
+
+}
+footer .text .live:hover{
+    background-color: var(--orange-color);
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+
+}
+footer .contact img{
+    transition: .3s;
+
+}
+footer .contact img:hover{
+    scale:1.2 ; 
+    cursor: pointer;
+}

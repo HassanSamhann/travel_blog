@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --nav-color : #C4F2FF; 
+    --orange-color :#FFA500 ; 
+    --blue-color : #14677F ;    
+}
 
 .Urbanist-font{
   font-family: "Urbanist", sans-serif;
@@ -65,18 +70,115 @@ section{
   }
 }
 
-/* media for phones */
-@media (max-width:786px) {
-
-}
-
 /*............ activities........... */
 
-.activites{
-
-}
-.activites .act-title{
+.activites .act-title div{
     text-align: center;
     margin-top: 20px;
+    color: #97E8FF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--blue-color);
+    font-size: 88px;
+    font-weight: bold;
+    text-shadow: 1px 2px 4px black;
+}
+@media(max-width : 425px){
+    
+.activites .act-title div{
+    font-size: 40px;
+}
+}
+.activites .cards{
+    height:329px ; 
+}
+.activites .cards .card {
+    /* width: 382px; */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 93px;
+    height: 100%;
+    border-radius:40px;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+    transition: .3s;
+    cursor: pointer;
+}
+/* cards bg */
+.card1{
+    background-image: url(../../../public/images/activites/act1.png);
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-size: cover;
+
+
+}
+.card2{
+    background-image: url(../../../public/images/activites/act2.png);
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-position: center;
+    background-size: cover;
+
+}
+.card3{
+    background-image: url(../../../public/images/activites/act3.png);
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-size: cover;
+
+
+}
+.card4{
+    background-image: url(../../../public/images/activites/act4.png);
+    background-repeat: no-repeat;
+    background-image: cover;
+
+    background-size: cover;
+
+}
+.card5{
+    background-image: url(../../../public/images/activites/act5.png);
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-size: cover;
+
+}
+/* cards end ...... */
+
+
+
+
+.activites  .cards .bg-i .card .img{
+    border-radius: 50%;
+}
+.activites .bg-i .cards .card  .img img{
+    width: 100%;
+    transition: .3s;
+}
+.activites .cards .card .text{
+    display: none;
     
 }
+.activites .cards .card  .text h3{
+    color: #FFFFFF;
+}
+.activites .cards .card  .text p{
+    color: white;
+    font-weight: lighter;
+}
+.active{
+    width: 382px !important; 
+    flex-direction: row !important;
+    align-items: end !important ;
+    gap: 30px !important;
+    justify-content: center !important;
+    cursor:default !important; 
+    
+}
+.block{
+    display: block !important;
+}
+

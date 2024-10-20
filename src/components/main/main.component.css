@@ -138,10 +138,11 @@ nav .sgin .log:hover{
 }
 .main-d .main-text{
     color: var(--nav-color);
-    text-shadow: 3px 2px 5px var(--blue-color);
     font-size: 37px;
-    font-weight: bold;
-    
+    font-weight: bolder;
+    -webkit-text-stroke-color: var(--blue-color);
+    -webkit-text-stroke-width: 2px;
+
 }
 .main-d .main-ipu{
     width: 70%;
