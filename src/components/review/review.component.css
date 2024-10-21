@@ -41,12 +41,12 @@
     font-family: "Metal Mania", system-ui;
     font-weight: lighter;
     font-size: 60px;
-    color: var(--main-color);
+    color: #14677F;
   }
   
   
   .div1 h1 span{
-    color: var(--sec-color);
+    color: #FFA500;
   }
   
   .div1 h2 {
@@ -67,8 +67,8 @@
     padding: 0 20px; /* Adjust padding to ensure the content fits */
     height: 69px;
     border-radius: 18px;
-    border: 1.6px solid var(--main-color);
-    color: var(--main-color);
+    border: 1.6px solid #14677F;
+    color: #14677F;
     background-color: white;
     font-size: 24px;
     font-weight: 600;
@@ -84,7 +84,7 @@
   
   
   .div1 button:hover {
-    background-color: var(--sec-color);
+    background-color: #FFA500;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
@@ -160,7 +160,7 @@
     font-size: 24px;
     font-weight: bold;
     padding-bottom: 48px;
-    color:var(--location-color);
+    color:#14677F;
 }
 
 
@@ -173,8 +173,8 @@
     padding: 0 20px; /* Adjust padding to ensure the content fits */
     height: 69px;
     border-radius: 18px;
-    border: 1.6px solid var(--main-color);
-    color: var(--main-color);
+    border: 1.6px solid #ED4D50;
+    color: #ED4D50;
     background-color: white;
     font-size: 24px;
     font-weight: 600;
@@ -192,7 +192,7 @@
   }
 
   .my-button:hover {
-    background-color: var(--sec-color);
+    background-color: #FFA500;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
@@ -304,7 +304,7 @@
 
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 27px;
-    color: var(--main-color);
+    color: #ED4D50;
     font-weight: 600;
     padding-bottom: 48px;
    
@@ -314,7 +314,7 @@
 .card h3{
 
     font-family: 'Roboto Condensed', sans-serif;
-    color: var(--Black-color);
+    color: #222A2C;
     font-size: 21px;
     font-weight: bold;
     padding-bottom: 48px;
@@ -326,7 +326,7 @@
 .card p {
     
     font-family: 'Roboto Condensed', sans-serif;
-    color: var(--Black-color);
+    color: #222A2C;
     font-size: 18px;
     line-height: 30px;
     text-align: justify;
