@@ -1,24 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Metal+Mania&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Metal+Mania&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
-body {
-
-  margin: 0;
-  padding: 0;
-
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
-
-}
 :root{
   --nav-color : #C4F2FF; 
   --orange-color :#FFA500 ; 
@@ -139,7 +121,7 @@ cursor: pointer;
   background-color: white;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border: 2px solid var(--blue-color);
-  z-index: 1000;
+  z-index: 5;
   margin:0 auto;
 }
 
