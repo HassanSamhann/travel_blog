@@ -16,9 +16,10 @@ import { TeamComponent } from "../components/team/team.component";
   template : `
 
   <app-header></app-header>  
-  <app-main></app-main>
+  <!-- <app-main></app-main>
   <app-team></app-team>
-  <app-about></app-about>
+  <app-about></app-about> -->
+  <router-outlet></router-outlet>
   <!-- <app-activities></app-activities> -->
   <app-footer></app-footer>
   
