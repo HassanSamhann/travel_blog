@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
+import { MainComponent } from "../../main/main.component";
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  imports: [MainComponent],
+  styleUrl: './contact.component.css',
+
+  template:`
+  
+  <app-main image="./des.png"  text="Journey Through Stories and Experiences"></app-main>
+  
+  
+  `
 })
 export class ContactComponent {
 
