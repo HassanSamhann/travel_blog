@@ -16,6 +16,19 @@
     --nav-color : #C4F2FF; 
     --orange-color :#FFA500 ; 
     --blue-color : #14677F ;    
+/* ........ */
+    --MainWhite-color:#DEE1E2;
+    --Gray-color:#596365;
+    --Black-color:#222A2C;
+  
+    --main-color : #14677F ;
+    --sec-color :#FFA500 ; 
+     
+    --nav-color : #C4F2FF; 
+    
+    --beige-color:#FFD8A8;
+    --lightBlue-color:#97E8FF;
+  
 }
 
 body{
