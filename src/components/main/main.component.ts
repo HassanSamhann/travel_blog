@@ -1,18 +1,21 @@
-import { Component } from '@angular/core';
+import { Component ,Input} from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule,CommonModule ],
   styleUrl: './main.component.css',
   template: `
-    <div class="main-d">
+    <div class="main-d"   [ngStyle]="{ 'background-image': 'url(' + image + ')' }" >
       <div class="nav-cola" id="colaps">
         <i class="fa-solid fa-circle-xmark exit" (click)="hide_nav()"></i>
         <ul class="cola">
-          <li><a routerLink="/">Home</a></li>
-          <li><a routerLink="/destinations">Destinations</a></li>
+          <li><a routerLink="/"  routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/destinations" routerLinkActive="active">Destinations</a></li>
           <li><a routerLink="/blogs">Blogs</a></li>
           <li><a routerLink="/reviews">Reviews</a></li>
           <li><a routerLink="/travel-tips">Travel Tips</a></li>
@@ -26,7 +29,7 @@ import { RouterModule } from '@angular/router';
       </div>
 
       <div class="main-text">
-        "Unlock the World: Your Guide to Travel Blogs"
+        {{text}}
       </div>
       <div class="main-ipu">
         <input type="text" placeholder="What would you like to review ?" />
@@ -39,10 +42,16 @@ import { RouterModule } from '@angular/router';
   `,
 })
 export class MainComponent {
+@Input() image: string = '';
+@Input() text: string = '';
+
   hide_nav() {
     let exit = <HTMLElement>document.querySelector('.exit');
     let cola = <HTMLElement>document.getElementById('colaps');
     cola.style.width = '0%';
     exit.style.display = 'none';
   }
+
+  // utilizing "getters" to keep templates clean in 'dumb' components (https://github.com/ngrx/example-app) 
+
 }

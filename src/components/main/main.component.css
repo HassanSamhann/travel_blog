@@ -88,7 +88,7 @@ nav ul li a:hover{
 }
 .main-d{
     height: 100vh;
-    background-image: url(../../../public/images/bg.png);
+    /* background-image: url(); */
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -243,6 +243,10 @@ padding: 40px;
     font-size: 29px;
     text-shadow: 1px 1px var(--orange-color);
     transition: .3s;
+}
+.active{
+    color: var(--orange-color);
+
 }
 .cola  li a:hover{
     color: var(--orange-color);

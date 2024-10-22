@@ -13,13 +13,13 @@ import { RouterModule } from '@angular/router';
           <img src="./images/logo.png" alt="" />
         </div>
         <ul class="list">
-          <li  ><a  routerLink="/">Home</a></li>
-          <li ><a  routerLink="/destinations">Destinations</a></li>
-          <li><a routerLink="/blogs">Blogs</a></li>
-          <li><a routerLink="/reviews">Reviews</a></li>
-          <li><a routerLink="/travel-tips">Travel Tips</a></li>
-          <li><a routerLink="/about">About</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
+          <li  ><a  routerLink="home" routerLinkActive="active">Home</a></li>
+          <li ><a  routerLink="/destinations" routerLinkActive="active">Destinations</a></li>
+          <li><a routerLink="/blogs" routerLinkActive="active">Blogs</a></li>
+          <li><a routerLink="/reviews" routerLinkActive="active">Reviews</a></li>
+          <li><a routerLink="/travel-tips" routerLinkActive="active">Travel Tips</a></li>
+          <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
         </ul>
         <div class="sgin">
           <a class="sin" >Sign Up</a>

@@ -14,7 +14,7 @@ import { LocationComponent } from "../../location/location.component";
   styleUrl: './home.component.css', 
   template:`
   
-  <app-main></app-main>
+  <app-main image="./images/bg.png"  text="Unlock the World: Your Guide to Travel Blogs"></app-main>
   <app-about></app-about>
   <app-explore></app-explore>
   <app-review></app-review>

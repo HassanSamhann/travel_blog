@@ -2,6 +2,10 @@
  
 
 
+.active{
+    color: var(--orange-color) !important;
+
+}
 
 .header-bg{
     background-color:#F5FCEF;
