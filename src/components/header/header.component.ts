@@ -13,13 +13,13 @@ import { RouterModule } from '@angular/router';
           <img src="./images/logo.png" alt="" />
         </div>
         <ul class="list">
-          <li  ><a  routerLink="home" routerLinkActive="active">Home</a></li>
-          <li ><a  routerLink="/destinations" routerLinkActive="active">Destinations</a></li>
-          <li><a routerLink="/blogs" routerLinkActive="active">Blogs</a></li>
-          <li><a routerLink="/reviews" routerLinkActive="active">Reviews</a></li>
-          <li><a routerLink="/travel-tips" routerLinkActive="active">Travel Tips</a></li>
-          <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-          <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+          <li  ><a  routerLink="home" routerLinkActive="active"   (click)="scrollToTop()">Home</a></li>
+          <li ><a  routerLink="/destinations" routerLinkActive="active" (click)="scrollToTop()">Destinations</a></li>
+          <li><a routerLink="/blogs" routerLinkActive="active" (click)="scrollToTop()">Blogs</a></li>
+          <li><a routerLink="/reviews" routerLinkActive="active" (click)="scrollToTop()">Reviews</a></li>
+          <li><a routerLink="/travel-tips" routerLinkActive="active" (click)="scrollToTop()"> Travel Tips</a></li>
+          <li><a routerLink="/about" routerLinkActive="active" (click)="scrollToTop()">About</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active" (click)="scrollToTop()">Contact</a></li>
         </ul>
         <div class="sgin">
           <a class="sin" >Sign Up</a>
@@ -45,5 +45,8 @@ export class HeaderComponent {
     let cola = <HTMLElement>document.getElementById('colaps');
     cola.style.width = '100%';
     exit.style.display = 'block';
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
