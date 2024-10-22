@@ -8,7 +8,7 @@ import { MainComponent } from "../../main/main.component";
   imports: [ShareComponent, MainComponent],
   styleUrl: './blogs.component.css',
   template:`
-  <app-main></app-main>
+  <app-main image="./images/blog.png"  text="Journey Through Stories and Experiences"></app-main>
   <app-share></app-share>
 
   `
