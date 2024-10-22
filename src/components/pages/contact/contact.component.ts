@@ -9,7 +9,7 @@ import { MainComponent } from "../../main/main.component";
 
   template:`
   
-  <app-main image="./des.png"  text="Journey Through Stories and Experiences"></app-main>
+  <app-main image="./contact.jpg"  text="Journey Through Stories and Experiences"></app-main>
   
   
   `
