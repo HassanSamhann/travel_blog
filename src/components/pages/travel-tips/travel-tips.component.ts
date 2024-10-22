@@ -8,7 +8,7 @@ import { MainComponent } from "../../main/main.component";
   styleUrl: './travel-tips.component.css', 
 
   template:`
-  <app-main image="./trip.png"  text="Our Journey: Inspiring Travel, One Trip at a Time"></app-main>
+  <app-main image="./trip.jpg"  text="Our Journey: Inspiring Travel, One Trip at a Time"></app-main>
 
   `
 

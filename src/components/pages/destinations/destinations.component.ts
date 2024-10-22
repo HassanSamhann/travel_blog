@@ -9,7 +9,7 @@ import { ActivitiesComponent } from "../../activities/activities.component";
   styleUrl: './destinations.component.css',
   template:`
   
-  <app-main image="./des.png"  text="Plan Your Best Trip Ever"></app-main>
+  <app-main image="./des.jpg"  text="Plan Your Best Trip Ever"></app-main>
   
   <app-activities></app-activities>
   
