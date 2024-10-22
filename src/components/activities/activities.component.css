@@ -116,7 +116,7 @@ section{
 
 }
 .card2{
-    background-image: url(../../../public/images/activites/act2.png);
+    background-image: url(../../../public/images/activites/act2.jpg);
     background-repeat: no-repeat;
     background-image: cover;
     background-position: center;
@@ -124,7 +124,7 @@ section{
 
 }
 .card3{
-    background-image: url(../../../public/images/activites/act3.png);
+    background-image: url(../../../public/images/activites/act3.jpg);
     background-repeat: no-repeat;
     background-image: cover;
     background-size: cover;
@@ -132,7 +132,7 @@ section{
 
 }
 .card4{
-    background-image: url(../../../public/images/activites/act4.png);
+    background-image: url(../../../public/images/activites/act4.jpg);
     background-repeat: no-repeat;
     background-image: cover;
 
@@ -140,7 +140,7 @@ section{
 
 }
 .card5{
-    background-image: url(../../../public/images/activites/act5.png);
+    background-image: url(../../../public/images/activites/act5.jpg);
     background-repeat: no-repeat;
     background-image: cover;
     background-size: cover;
