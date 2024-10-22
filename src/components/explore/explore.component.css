@@ -281,7 +281,18 @@ cursor: pointer;
   align-items: center;
  
 }
-
+@media (max-width:330px){
+  .recent-posts {
+    width: 300px;
+  }
+  .post-boxes{
+    width: 300px;
+  }
+  .post-image{
+    width: 40px;
+    height: 50%;
+  }
+}
 
 .recent-posts h2 {
 

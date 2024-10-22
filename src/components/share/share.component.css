@@ -1,0 +1,274 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Metal+Mania&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Metal+Mania&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    --MainWhite-color:#DEE1E2;
+    --Gray-color:#596365;
+    --Black-color:#222A2C;
+    --main-color : #14677F ;
+    --sec-color :#FFA500 ; 
+    --nav-color : #C4F2FF;    
+    --beige-color:#FFD8A8;
+    --lightBlue-color:#97E8FF;
+}
+
+body{
+
+    font-family: "Roboto Condensed", sans-serif;
+    height: 2000px;   
+}
+
+/* Title for each section */
+
+.Title-Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 30px 0px; 
+    max-width: 1150px; 
+    margin: 0 auto; 
+    margin-bottom: 48px;
+  }
+  
+.Title-Container h1{
+    margin: 0;
+    font-family: "Metal Mania", system-ui;
+    font-weight: lighter;
+    font-size: 60px;
+    color: var(--main-color);
+  }
+  
+  
+.Title-Container h1 span{
+    color: var(--sec-color);
+  }
+  
+.Title-Container h2, .grayContent {
+    margin: 0;
+    font-family: "Urbanist", sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    color: var(--Gray-color); /* Text color */
+    -webkit-text-stroke: 0.7px #758a92; /* Stroke color and width */
+  }
+
+
+.Title-Container button , .blogBtn{
+    width: 152px;
+    height: 69px;
+    border-radius: 18px;
+    border: 1.6px solid var(--main-color);
+    color: var(--main-color);
+    background-color: white;
+    font-size: 24px;
+    font-weight: 600;;
+    font-family: "Urbanist", sans-serif;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+    cursor: pointer;
+}
+    
+.Title-Container:hover , .blogBtn:hover{
+      background-color: var(--sec-color);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ///////////////////////////////////////////////////// */
+/* *
+{
+  overflow: hidden;
+} */
+
+/* my style  */
+.spanyellow{
+  color: var(--sec-color);
+}
+.spanBlue{
+  color: var(--lightBlue-color);
+}
+
+.mainBlogTitle{
+  width:75%;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 70px;
+  color: var(--main-color);
+  
+}
+.blogTitle{
+  font-size: 2cm;
+  font-weight: bolder;
+  color: var(--lightBlue-color);
+  text-shadow: 
+        1px 1px 0 var(--main-color),  
+        -1px -1px 0 var(--main-color), 
+        1px -1px 0 var(--main-color),  
+        -1px 1px 0 var(--main-color),   
+        0px 1px 0 var(--main-color),    
+        0px -1px 0 var(--main-color);
+}
+.postTitle{
+  color: var(--Black-color);
+}
+.blogPost{
+  overflow: hidden;
+}
+.RblogPost .hstack:hover , .blogPost:hover{
+  background-color: #c3d4d8ce;
+  border-radius: 20px;
+  /*border: .01px solid var(--main-color);
+  */box-shadow: 0 6px 12px rgba(0, 0, 0, 0.631);
+}
+
+.RblogPost{
+  background-color: #F5FCFE;
+  border-radius: 10px;
+  border: .1px solid var(--main-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.395);
+
+}
+.blogPostImg{
+  height: 100% !important;
+  object-fit:fill !important;
+}
+
+.RblogPost .RBlogPostTitle{
+  font-size: 1cm;
+  padding: 5px 20px;
+  font-weight: bolder;
+  color: var(--lightBlue-color);
+  text-shadow: 
+        1px 1px 0 var(--main-color),  
+        -1px -1px 0 var(--main-color), 
+        1px -1px 0 var(--main-color),  
+        -1px 1px 0 var(--main-color),   
+        0px 1px 0 var(--main-color),    
+        0px -1px 0 var(--main-color);
+}
+.RblogPost img{
+ max-height: 80px ;
+  object-fit: cover;
+}
+.rSubscribe{
+  background-color: var(--sec-color);
+  color: var(--main-color);
+
+}
+.rSubscribe p{
+  font-size: 20px;
+  line-height: 30px;
+}
+.blogTag .col{
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination a {
+  display: inline-block;
+  margin: 2px ;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination a.active {
+  background-color: var(--sec-color);
+  color: #F5FCFE;
+}
+.pagination a:hover{
+  background-color: var(--sec-color);
+  color: #F5FCFE;
+}
+
+.pagination a.previous,
+.pagination a.next {
+  padding: 5px 8px;
+  border: hidden;
+}
+
+/*********************** your own blog  ***********/
+.ownBlog button{
+  width: auto;
+  color: var(--beige-color);
+  border-color: var(--beige-color);
+  background-color: var(--main-color);
+  
+}
+.ownBlog button:hover{
+  background-color: var(--sec-color);
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+.form-control:focus ,.form-check-input:focus{
+  color: var(--main-color) !important;
+  border-color:  var(--sec-color) !important;
+  box-shadow: 0 0 0 0.25rem  #ffa6005b !important;
+}
+.form-control::placeholder {
+  color: var(--main-color);
+  opacity: .7 !important;
+}
+.form-control{
+  padding: 20px !important;
+}
+.form-check-input:checked {
+  background-color: var(--main-color) !important;
+  border-color:  var(--main-color) !important
+  ;
+}
+
+
+
+
+
+
+
+/* media for tabes */
+@media (max-width:992px) {}
+/* media for phones */
+@media (max-width:786px) {
+  .blogTitle{
+    font-size: 1.2cm;
+  }
+  .blogBtn{
+    font-size: 12px;
+    height: 50px;
+  }
+  .mainBlogTitle{
+    width:95%;
+    font-size: 30px;
+    
+  }
+.blogPost{
+  margin-left: 10px;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.blogPost img{
+  width: 100%;
+}
+
+
+}
