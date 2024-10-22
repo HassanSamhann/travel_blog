@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   imports: [],
   styleUrl: './share.component.css',
   template: `
+
+  <div class="container mx-auto">
   <header >
     <div class="container-fluid">
         <h1 class="mainBlogTitle"> <span class="spanyellow">Share</span>  your <span class="spanyellow">Travel</span>  Experience in form of a <span class="spanyellow">story</span></h1>
@@ -299,7 +301,7 @@ import { Component } from '@angular/core';
 
 
 </section>
-
+</div>
 
   
   `,
