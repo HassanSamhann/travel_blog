@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
+import { ShareComponent } from "../../share/share.component";
+import { MainComponent } from "../../main/main.component";
 
 @Component({
   selector: 'app-blogs',
   standalone: true,
-  imports: [],
-  templateUrl: './blogs.component.html',
-  styleUrl: './blogs.component.css'
+  imports: [ShareComponent, MainComponent],
+  styleUrl: './blogs.component.css',
+  template:`
+  <app-main></app-main>
+  <app-share></app-share>
+
+  `
 })
 export class BlogsComponent {
 
