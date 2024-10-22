@@ -14,13 +14,13 @@ import { CommonModule } from '@angular/common';
       <div class="nav-cola" id="colaps">
         <i class="fa-solid fa-circle-xmark exit" (click)="hide_nav()"></i>
         <ul class="cola">
-          <li><a routerLink="/"  routerLinkActive="active">Home</a></li>
-          <li><a routerLink="/destinations" routerLinkActive="active">Destinations</a></li>
-          <li><a routerLink="/blogs">Blogs</a></li>
-          <li><a routerLink="/reviews">Reviews</a></li>
-          <li><a routerLink="/travel-tips">Travel Tips</a></li>
-          <li><a routerLink="/about">About</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
+        <li  ><a  routerLink="home" routerLinkActive="active"   (click)="scrollToTop()">Home</a></li>
+          <li ><a  routerLink="/destinations" routerLinkActive="active" (click)="scrollToTop()">Destinations</a></li>
+          <li><a routerLink="/blogs" routerLinkActive="active" (click)="scrollToTop()">Blogs</a></li>
+          <li><a routerLink="/reviews" routerLinkActive="active" (click)="scrollToTop()">Reviews</a></li>
+          <li><a routerLink="/travel-tips" routerLinkActive="active" (click)="scrollToTop()"> Travel Tips</a></li>
+          <li><a routerLink="/about" routerLinkActive="active" (click)="scrollToTop()">About</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active" (click)="scrollToTop()">Contact</a></li>
         </ul>
         <div class="sgins">
           <a class="sins" href="">Sign Up</a>
@@ -53,5 +53,8 @@ export class MainComponent {
   }
 
   // utilizing "getters" to keep templates clean in 'dumb' components (https://github.com/ngrx/example-app) 
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
 }
