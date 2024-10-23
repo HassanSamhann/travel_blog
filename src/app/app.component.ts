@@ -1,5 +1,3 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "../components/header/header.component";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -9,6 +7,9 @@ import { ActivitiesComponent } from "../components/activities/activities.compone
 import { FooterComponent } from "../components/footer/footer.component";
 import { TeamComponent } from "../components/team/team.component";
 import { CommonModule } from '@angular/common';
+import { Router, NavigationEnd } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -16,18 +17,22 @@ import { CommonModule } from '@angular/common';
   imports: [RouterOutlet, HeaderComponent, FontAwesomeModule, MainComponent, AboutComponents, ActivitiesComponent, FooterComponent, TeamComponent, RouterModule, CommonModule],
   styleUrl: './app.component.css',
   template: `
-    <app-header *ngIf="showHeaderFooter()"></app-header>  
+    <app-header *ngIf="showHeaderFooter"></app-header>  
     <router-outlet></router-outlet>
-    <app-footer *ngIf="showHeaderFooter()"></app-footer>
+    <app-footer *ngIf="showHeaderFooter"></app-footer>
   `
 })
-export class AppComponent {
-  title = 'travel_blog';
+export class AppComponent implements OnInit {
+  showHeaderFooter = true;
 
   constructor(private router: Router) {}
 
-  showHeaderFooter(): boolean {
-    // تحقق من المسار الحالي؛ إذا كان /landing فلا تعرض الهيدر والفوتر
-    return this.router.url !== '/';
+  ngOnInit(): void {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      const hideForRoutes = ['/login', '/sign-up','/']; // حدد المسارات التي لا تريد عرض الهيدر والفوتر فيها
+      this.showHeaderFooter = !hideForRoutes.includes(event.url);
+    });
   }
 }

@@ -22,8 +22,8 @@ import { RouterModule } from '@angular/router';
           <li><a routerLink="/contact" routerLinkActive="active" (click)="scrollToTop()">Contact</a></li>
         </ul>
         <div class="sgin">
-          <a class="sin" >Sign Up</a>
-          <a class="log" >Login</a>
+          <a class="sin" routerLink="sign-up" >Sign Up</a>
+          <a class="log" routerLink="login" >Login</a>
         </div>
         <i class="fa-solid fa-bars bars" (click)="display_nav()"></i>
       </nav>

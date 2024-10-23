@@ -245,7 +245,7 @@ padding: 40px;
     transition: .3s;
 }
 .active{
-    color: var(--orange-color);
+    color: var(--orange-color) !important;
 
 }
 .cola  li a:hover{

@@ -23,8 +23,8 @@ import { CommonModule } from '@angular/common';
           <li><a routerLink="/contact" routerLinkActive="active" (click)="scrollToTop()">Contact</a></li>
         </ul>
         <div class="sgins">
-          <a class="sins" href="">Sign Up</a>
-          <a class="logs" href="">Login</a>
+          <a class="sins"  routerLink="sign-up" style="cursor: pointer;" >Sign Up</a>
+          <a class="logs" routerLink="login" style="cursor: pointer;" >Login</a>
         </div>
       </div>
 
