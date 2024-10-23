@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
   template: `
     <header>
       <nav>
-        <div class="img">
+        <div class="img"  routerLink="/" style="cursor: pointer;">
           <img src="./images/logo.png" alt="" />
         </div>
         <ul class="list">

@@ -11,10 +11,11 @@ import { AboutComponent } from '../components/pages/about/about.component';
 import { ContactComponent } from '../components/pages/contact/contact.component';
 import { SignUpComponent } from '../components/pages/sign-up/sign-up.component';
 import { LoginComponent } from '../components/pages/login/login.component';
+import { LandingComponent } from '../components/pages/landing/landing.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: '', component: HomeComponent },
+  { path: '', component: LandingComponent },
   { path: 'destinations', component: DestinationsComponent },
   { path: 'blogs', component: BlogsComponent },
   { path: 'reviews', component: ReviewsComponent },
