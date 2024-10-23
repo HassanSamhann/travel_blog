@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Metal+Mania&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Metal+Mania&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+
+}
+
+:root{
+
+
+  --MainWhite-color:#DEE1E2;
+  --Gray-color:#596365;
+  --Black-color:#222A2C;
+
+  --main-color : #14677F ;
+  --sec-color :#FFA500 ; 
+   
+  --nav-color : #C4F2FF; 
+  
+  --beige-color:#FFD8A8;
+  --lightBlue-color:#97E8FF;
+}
+
+
+/* /////////////////////////// */
+
+
+.div1 {
+  
+  
+  align-items: center; 
+  padding: 30px 0px; /* Corrected padding */
+  max-width: 1185px; 
+  margin: 0 auto; 
+  margin-bottom: 48px;
+}
+
+.div1 h1{
+  margin: 0;
+  font-family: "Metal Mania", system-ui;
+  font-weight: lighter;
+  font-size: 60px;
+  color: var(--sec-color);
+  margin-bottom: 80px;
+}
+
+.div1 h3 {
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    color: var(--Black-color);
+    font-weight: 600;
+
+}
+
+
+.container{
+    
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 100px; 
+  max-width: 1240px; 
+  margin: 0 auto; 
+  padding: 0px 20px; 
+  justify-content: center;
+  align-content: center;
+  
+
+}
+
+
+
+.contact-form {
+
+    padding: 0px 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+
+    margin-bottom: 24px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--sec-color);
+    border-radius: 5px;
+    background-color: #e6f7fc99;
+}
+
+
+
+.contact-form button {
+
+    width: 142px;
+    height: 69px;
+    border-radius: 18px;
+    border: 1.6px solid var(--main-color);
+    color: var(--beige-color);
+    background-color: var(--main-color);
+    font-size: 24px;
+    font-weight: 600;;
+    font-family: "Urbanist", sans-serif;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: var(--sec-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: var(--main-color);
+}
+
+
+
+  .get-in-touch {
+    width: 100%; 
+    background-color: #F5FCFE;
+    border-radius: 16px;
+    border: 1px solid #14687f7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; 
+   
+  }
+  
+ 
+  .post-boxes,
+  .get-in-touch,
+  .social-media-boxes {
+    width: 513px; 
+  }
+  
+  
+  .get-in-touch h2 {
+  
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--sec-color);
+    margin: 0;
+  }
+  
+  .Social-boxes {
+  
+    margin-top: 18px;
+  
+  }
+  
+  .social-media-boxes {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    margin-top: 20px; 
+  }
+  
+  .social-box {
+  
+    border-radius: 12px; /* Rounded corners */
+    justify-content: center; /* Padding inside the box */
+    display: flex; /* Flexbox for internal layout */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    height: 71px; /* Fixed height for smaller boxes */
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .social-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .social-logo {
+    width: 30px; /* Logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+  }
+  
+  .social-stats {
+    display: flex; /* Use flexbox to stack the counts and text */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to the left */
+  }
+  
+  .likes-count,
+  .followers-count {
+    font-family: 'Roboto', sans-serif; /* Font family */
+    font-size: 18px; /* Font size */
+    font-weight: semi-bold; /* Semi-bold weight */
+    color: white; /* Use main color for text */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .likes-text,
+  .followers-text {
+    font-family: 'Roboto', sans-serif; /* Font family */
+    font-size: 14px; /* Smaller font size */
+    color: white; /* Text color for description */
+    margin: 0; /* Remove default margin */
+  }
+  
+
+
+
+     /* /////////////////Subscribe HomePage/////////////////////////// */    
+
+
+     .Sub-Container{
+    
+        height: 108px;
+        background-color: #E8F0F3;
+        width: 1090px;
+        margin: 0 auto;
+        margin-bottom: 156px;
+        margin-top: 156px;
+        border-radius: 18px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        /* justify-content: center; */
+        align-items: center; 
+        
+       }
+    
+       .Sub-Container h1{
+    
+        font-family: "Roboto Condensed", serif;
+        font-size: 27px;
+        line-height: 140%;
+        color: var(--Black-color);
+        padding-left: 36px;
+        
+       }
+    
+       .Sub-Container h1 span{
+    
+        color: var(--sec-color);
+        
+       }
+    
+    
+       .form-control{
+    
+        border-radius: 16px;
+        width: 300px;
+        height: 55px;
+        margin-left: 80px;
+    
+       
+       }
+    
+       .EmailForm ::placeholder{
+        padding-left: 10px;
+       }
+    
+       .Sub-Btn{
+        padding-right: 36px;
+        margin-left: 40px;
+       }
+
+       
+    
+       .Sub-Container button{
+    
+        width: 152px;
+        height: 69px;
+        border-radius: 18px;
+        border: 1.6px solid var(--main-color);
+        color: var(--beige-color);
+        background-color: var(--main-color);
+        font-size: 24px;
+        font-weight: 600;;
+        font-family: "Urbanist", sans-serif;
+        transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+        cursor: pointer;
+        
+        }
+        
+        .Sub-Container button:hover {
+          background-color: var(--sec-color);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          color: var(--main-color);
+        }
+    
+        
+    
+    /* Media Query for smaller screens (768px and below) */
+    
+    @media (max-width: 1100px) {
+    
+    
+      .Sub-Container {
+        flex-direction: column; 
+        height: auto; 
+        width: 90%; 
+        padding: 20px;
+      }
+    
+      .Sub-Container h1 {
+        padding-left: 0; 
+        text-align: center; 
+        margin-bottom: 20px; 
+      }
+    
+      .form-control {
+        width: 400px;
+        margin-left: 0; 
+        margin-bottom: 20px; 
+      }
+    
+      .Sub-Btn {
+        padding-right: 0; /* Remove right padding */
+        margin-left: 0; /* Remove the left margin */
+      }
+    
+      .Sub-Container button {
+        width: 400px;
+        height: 69px;
+      }
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+    
+    
+      .Sub-Container {
+        flex-direction: column; 
+        height: auto; 
+        width: 80%; 
+        padding: 20px;
+      }
+    
+      .Sub-Container h1 {
+        padding-left: 0; 
+        text-align: center; 
+        margin-bottom: 20px; 
+        font-size: 22px;
+        
+      }
+    
+      .form-control {
+        width: 400px;
+        margin-left: 0; 
+        margin-bottom: 20px; 
+      }
+    
+      .Sub-Btn {
+        padding-right: 0; /* Remove right padding */
+        margin-left: 0; /* Remove the left margin */
+      }
+    
+      .Sub-Container button {
+        width: 400px;
+        height: 69px;
+      }
+    }
+    
+    
+    @media (max-width: 767px) {
+    
+    
+      .Sub-Container {
+        flex-direction: column; 
+        height: auto; 
+        width: 90%; 
+        padding: 20px;
+      }
+    
+      .Sub-Container h1 {
+        padding-left: 0; 
+        text-align: center; 
+        margin-bottom: 20px; 
+        font-size: 22px;
+      }
+    
+      .form-control {
+        width: 400px;
+        margin-left: 0; 
+        margin-bottom: 20px; 
+      }
+    
+      .Sub-Btn {
+        padding-right: 0; /* Remove right padding */
+        margin-left: 0; /* Remove the left margin */
+      }
+    
+      .Sub-Container button {
+        width: 400px;
+        height: 69px;
+      }
+    }
+
+
+
+    @media (max-width: 1200px) {
+        .container {
+          display: block; /* Remove grid layout */
+          max-width: 100%; /* Adjust width */
+          padding: 0px 10px; /* Adjust padding */
+          
+        }
+
+       
+
+          .post-boxes,
+        .get-in-touch,
+        .social-media-boxes {
+            width: 513px; 
+            margin: 40 auto;
+        }
+
+
+        .div1 h1{
+           
+            font-size: 32px;
+           
+            margin-bottom: 40px;
+          }
+          
+          .div1 h3 {
+          
+           
+              font-size: 14px;
+              line-height: 10%;
+             
+          }
+
+          .div1 {
+           
+            padding: 10px 0px; /* Corrected padding */
+            max-width: 800px; 
+            margin-bottom: 38px;
+            margin-left: 30px;
+
+          }
+
+        
+
+
+        .Sub-Container{
+    
+           
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+    }
+
+
+    @media (max-width: 582px) {
+        .container {
+          display: block; /* Remove grid layout */
+          max-width: 100%; /* Adjust width */
+          padding: 0px 10px; /* Adjust padding */
+          
+        }
+
+       
+          .post-boxes,
+        .get-in-touch,
+        .social-media-boxes {
+            width: 413px; 
+            margin: 40 auto;
+        }
+
+        .div1 h1{
+           
+            font-size: 32px;
+           
+            margin-bottom: 40px;
+          }
+          
+          .div1 h3 {
+          
+           
+              font-size: 14px;
+              line-height: 10%;
+             
+          }
+
+          .div1 {
+           
+            padding: 10px 0px; /* Corrected padding */
+            max-width: 800px; 
+            margin-bottom: 38px;
+            margin-left: 30px;
+
+          }
+
+          .contact-form button {
+
+            width: 425px;
+            height: 69px;
+          
+        }
+
+
+        .Sub-Container{
+    
+           
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+        
+    }

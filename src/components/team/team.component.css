@@ -58,19 +58,54 @@ section{
    justify-content: center;
 }
 .bg-1{
-    background-image: url(../../../public/images/activites/act1.png);
+    background-image: url(../../../public/images/reg-1.jpg);
     background-repeat: no-repeat;
     background-image: cover;
     background-size: cover;
 
 }
+.bg-2{
+  background-image: url(../../../public/images/reg-2.jpg);
+  background-repeat: no-repeat;
+  background-image: cover;
+  background-size: cover;
+
+}
+.bg-3{
+  background-image: url(../../../public/images/reg-3.jpg);
+  background-repeat: no-repeat;
+  background-image: cover;
+  background-size: cover;
+
+}
+.bg-4{
+  background-image: url(../../../public/images/reg-4.jpg);
+  background-repeat: no-repeat;
+  background-image: cover;
+  background-size: cover;
+
+}
+.bg-5{
+  background-image: url(../../../public/images/reg-5.jpg);
+  background-repeat: no-repeat;
+  background-image: cover;
+  background-size: cover;
+
+}
+
 .team .team-cir .circle{
     width: 248px;
     height: 250px;
     border-radius: 50%;
     border: 8px solid #F8F8F8;
     position: relative;
-
+    
+transition: .3s;
+}
+.team .team-cir .circle:hover{
+  cursor: pointer;
+  scale: 1.2;
+  z-index: 20;
 }
 .team .team-cir .circle .git{
     position: absolute;
