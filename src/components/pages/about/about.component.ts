@@ -12,6 +12,7 @@ import { TeamComponent } from "../../team/team.component";
   template:`
   <app-main image="./about.png"  text="Get in Touch and Start Your Journey"></app-main>
   <app-team></app-team>
+  
   `
 
 })
